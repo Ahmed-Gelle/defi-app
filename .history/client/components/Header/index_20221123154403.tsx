@@ -7,7 +7,6 @@ import ethLogo from '../../assets/eth.png'
 import logo from '../../assets/logo.png'
 import { Styles } from './styles'
 import Link from 'next/link'
-import Menu from './Menu'
 
 const Header = () => {
   const [selectedNav, setSelectedNav] = useState('swap')
@@ -83,8 +82,12 @@ const Header = () => {
             </div>
           </div>
         )}
-       <Menu/>
-    </div>
+        <div className={`${Styles.button} ${Styles.buttonPadding}`}>
+          <div className={`${Styles.buttonIconContainer} mx-2`}>
+            <HiOutlineDotsVertical />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
