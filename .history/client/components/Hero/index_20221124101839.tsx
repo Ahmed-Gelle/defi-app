@@ -1,28 +1,6 @@
-import React from 'react'
+import REact from 'react';
 
-function Menu() {
-  return (
-    <div className="drawer">
-  <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-  <div className="drawer-content">
-    <label htmlFor="my-drawer" className="btn btn-primary drawer-button">Open drawer</label>
-  </div> 
-  <div className="drawer-side">
-    <label htmlFor="my-drawer" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-80 bg-base-100 text-base-content">
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-      
-    </ul>
-  </div>
-</div>
-  )
-}
-
-export default Menu
-
-
-export function Hero() {
+export default function Hero() {
     return (
         <div className="bg-white">
             <header className="bg-[#FCF8F1] bg-opacity-30">
@@ -41,4 +19,3 @@ export function Hero() {
                         </div>
     )
 }
-                            

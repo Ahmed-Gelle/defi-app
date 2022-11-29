@@ -39,6 +39,4 @@ export function Hero() {
                         </div>
                         </header>
                         </div>
-    )
-}
                             
