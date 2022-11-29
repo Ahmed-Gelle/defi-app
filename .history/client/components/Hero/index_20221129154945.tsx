@@ -1,7 +1,6 @@
 import React from 'react';
 import {BsArrowRightCircle} from 'react-icons/bs'
 import logo from '../../assets/logo.png'
-import hero from '../../assets/hero.png'
 import Image from 'next/image'
 import ModelViewer from '../3DAnimation';
 
@@ -85,16 +84,12 @@ movements via a CFD trading account, or buying and selling the under- lying co
                 </div>
 
                 <div class="mt-8 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0">
-                    <div class=" sm:absolute relative w-full h-full">
-                    <div class=" sm:absolute w-full h-full">
-            <ModelViewer scale="5" modelPath={"Rooster.glb"} />
-            </div>
-            </div>
-            <Image src={hero}/>
+                    <img class="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl" src="" alt="" />
                 </div>
             </div>
         </div>
-        <div class="md:top-32 mt-8">
+        <div class="mt-8">
+        <ModelViewer scale="4" modelPath={"Rooster.glb"} />
 
         </div>
     </section>
