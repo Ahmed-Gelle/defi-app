@@ -45,6 +45,17 @@ export default function Hero() {
                 </nav>
             </div>
 
+            <nav x-show="expanded" x-collapse>
+                <div class="flex flex-col pt-8 pb-4 space-y-6">
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Products </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Features </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Pricing </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Support </a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -80,9 +91,7 @@ movements via a CFD trading account, or buying and selling the under- lying co
             <ModelViewer scale="5" modelPath={"Rooster.glb"} />
             </div>
             </div>
-            <AttentionSeeker>
-                <Image src={hero}/>
-            </AttentionSeeker>
+            <Image src={hero}/>
                 </div>
             </div>
         </div>

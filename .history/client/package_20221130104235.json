@@ -6,13 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
     "@react-three/drei": "^9.45.1",
     "@react-three/fiber": "^8.9.1",
     "ethers": "^5.7.2",
     "next": "latest",
     "react": "18.2.0",
-    "react-awesome-reveal": "^4.1.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-reveal": "^1.2.2",

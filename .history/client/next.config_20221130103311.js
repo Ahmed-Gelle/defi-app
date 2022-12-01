@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-const config = require('react-reveal/globals.js');
+import config from 'react-reveal/globals';
 
 
 const withTM = require('next-transpile-modules')(['three'])
-module.exports = withTM()
+module.exports = {config({ ssrFadeout: true }),withTM()}

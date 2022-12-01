@@ -81,7 +81,7 @@ movements via a CFD trading account, or buying and selling the under- lying co
             </div>
             </div>
             <AttentionSeeker>
-                <Image src={hero}/>
+            <Image src={hero}/>
             </AttentionSeeker>
                 </div>
             </div>

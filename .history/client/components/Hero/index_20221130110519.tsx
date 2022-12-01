@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import hero from '../../assets/hero.png'
 import Image from 'next/image'
 import ModelViewer from '../3DAnimation';
-import { Fade, Slide, AttentionSeeker  } from "react-awesome-reveal";
+import LightSpeed from 'react-reveal/LightSpeed';
 
 export default function Hero() {
     return (
@@ -45,6 +45,17 @@ export default function Hero() {
                 </nav>
             </div>
 
+            <nav x-show="expanded" x-collapse>
+                <div class="flex flex-col pt-8 pb-4 space-y-6">
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Products </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Features </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Pricing </a>
+
+                    <a href="#" title="" class="text-base font-normal text-gray-400 transition-all duration-200 hover:text-white"> Support </a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -53,10 +64,10 @@ export default function Hero() {
             <div class="relative">
                 <div class="lg:w-2/3">
                     <p class="text-sm font-normal tracking-widest text-gray-300 uppercase">A Hub for Designers, Developers & Marketers</p>
-                    <h1 class="mt-6 text-4xl font-normal text-white sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl"><Fade delay={1e3} cascade damping={1e-1}><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500">Decentralized</span></Fade> Exchange Made For Everybody
+                    <h1 class="mt-6 text-4xl font-normal text-white sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl"><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500"><LightSpeed ssrFadeout opposite cascade collapse when>Decentralized</LightSpeed></span> Exchange Made For Everybody
 </h1>
-<AttentionSeeker><p class="max-w-lg mt-4 text-xl font-normal text-gray-400 sm:mt-8">Cryptocurrency trading is the act of speculating on cryptocurrency price
-movements via a CFD trading account, or buying and selling the under- lying coins via and exhance</p></AttentionSeeker> 
+                    <p class="max-w-lg mt-4 text-xl font-normal text-gray-400 sm:mt-8">Cryptocurrency trading is the act of speculating on cryptocurrency price
+movements via a CFD trading account, or buying and selling the under- lying coins via and exhance</p>
                     <div class="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
                         <div class="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-cyan-500/50"></div>
                         <a href="#" title="" class="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal text-white bg-blue border border-transparent rounded-full" role="button"> Start Exploring Inspiration </a>
@@ -80,9 +91,7 @@ movements via a CFD trading account, or buying and selling the under- lying co
             <ModelViewer scale="5" modelPath={"Rooster.glb"} />
             </div>
             </div>
-            <AttentionSeeker>
-                <Image src={hero}/>
-            </AttentionSeeker>
+            <Image src={hero}/>
                 </div>
             </div>
         </div>
